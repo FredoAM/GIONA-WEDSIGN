@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+<body>
+    <header class="header header-faqs">
+        <nav >
+            <ul class="menu">
+                <img src="/assets/logo.png" alt="">
+                <div class="menu-pages">
+                    <li><a href="#inicio">Our Story</a></li>
+                    <li><a href="#sobre-mi">Travel & Stay</a></li>
+                    <li><a href="#contacto">Registry</a></li>
+                    <li><a href="#contacto">FAQs</a></li>
+                </div>
+                <button>RSVP</button>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="faq-container">
+        <div class="faq-titles">
+            <div>
+                <h1>FREQUENTLY ASKED</h1>
+                <h4>Questions</h4> <!-- font family : la-bohemienne -->            
+            </div>
+        </div>
+
+        <ul>
+            <hr>
+            <li>
+                <button class="accordion">
+                    <h3>
+                        What does "formal attire" mean?
+                    </h3>
+                    <span>+</span>
+                </button>
+                <div class="panel">
+                    Formal attire typically includes elegant gowns, suits, tuxedos, or cocktail dresses. Think of it as dressing for a special occasion, similar to what you might wear to a sophisticated evening event.
+                </div>
+            </li>
+            <hr>
+            <li>
+                <button class="accordion">
+                    <h3>
+                        Are specific colors required for the dress code?
+                    </h3>
+                    <span>+</span>
+                </button>
+                <div class="panel">
+                    No, there are no specific color requirements. Feel free to express your personal style and wear colors that make you feel comfortable and confident.                </div>
+            </li>
+            <hr>
+            <li>
+                <button class="accordion">
+                    <h3>
+                        Are children welcome at the wedding?
+                    </h3>
+                    <span>+</span>
+                </button>
+                <div class="panel">
+                    Absolutely! We welcome children and have arranged for a designated kids' area with entertainment to ensure they have a great time during the celebration.                </div>
+            </li>
+            <hr>
+            <li>
+                <button class="accordion">
+                    <h3>      
+                        Is there a specific age limit for children attending?
+                    </h3>
+                    <span>+</span>
+                </button>
+                <div class="panel">
+                    There's no age limit for children. We want the whole family to be a part of our special day, from the littlest ones to the oldest.                </div>
+            </li>
+            <hr>
+            <li>
+                <button class="accordion">
+                    <h3>
+                        Do you accommodate dietary restrictions?
+                    </h3>
+                    <span>+</span>
+                </button>
+                <div class="panel">
+                    Yes, we're committed to ensuring that all our guests have a delightful dining experience. We offer vegan, vegetarian, and gluten-free food options. Please indicate your dietary preferences in your RSVP, and we'll make sure you're catered to accordingly.                </div>
+            </li>
+            <hr>
+            <li>
+                <button class="accordion">
+                    <h3>
+                        Can we request dishes for dietary restrictions?
+                    </h3>
+                    <span>+</span>
+                </button>
+                <div class="panel">
+                    While we'll have a variety of dishes to accommodate different dietary needs, if you have specific requests or severe allergies, please let us know in advance, and we'll do our best to accommodate them.                </div>
+            </li>
+            <hr>
+        </ul>
+
+        
+    </main>
+    <footer>Footer</footer>
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+              panel.style.display = "none";
+            } else {
+              panel.style.display = "block";
+            }
+          });
+        }
+        </script>
+</body>
+</html>
