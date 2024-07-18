@@ -5,22 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8aa54e52b5.js" crossorigin="anonymous"></script>
 
     <title>Document</title>
 </head>
 <body>
     <header class="header">
         <nav >
-            <ul class="menu">
-                <img src="/assets/logo.png" alt="">
-                <div class="menu-pages">
-                    <li><a href="#inicio">Our Story</a></li>
-                    <li><a href="#sobre-mi">Travel & Stay</a></li>
-                    <li><a href="#contacto">Registry</a></li>
-                    <li><a href="#contacto">FAQs</a></li>
-                </div>
-                <button>RSVP</button>
-            </ul>
+            <div class="menu">
+                <a href="index.html"><img src="/assets/logo.png" alt=""></a>
+                <i class="fa-solid fa-bars"></i>
+                <ul class="menu-pages">
+                    <li><a href="our-story.html">Our Story</a></li>
+                    <li><a href="travel-stay.html">Travel & Stay</a></li>
+                    <li><a href="registry.html">Registry</a></li>
+                    <li><a href="faqs.html">FAQs</a></li>
+                </ul>
+                <button><a href="rsvp.html">RSVP</a></button>
+            </div>
+        </nav>
+    </header>
+    <header class="header-media">
+        <nav >
+            <div class="menu">
+                <a href="index.html"><img src="/assets/logo.png" alt=""></a>
+                <i class="fa-solid fa-x"></i>
+
+                <ul class="menu-pages-media">
+                    <li><a href="our-story.html">Our Story</a></li>
+                    <li><a href="travel-stay.html">Travel & Stay</a></li>
+                    <li><a href="registry.html">Registry</a></li>
+                    <li><a href="faqs.html">FAQs</a></li>
+                </ul>
+                <button><a href="rsvp.html">RSVP</a></button>
+            </div>
         </nav>
     </header>
 
@@ -36,15 +54,18 @@
             </div>
         </div>
         <section class="our-story-section">
-            <img class="our-story1" src="/assets/our-story-1.jpg" alt="" >
+            <div class="our-story1">
+                <img  src="/assets/our-story-1.jpg" alt="" >
+            </div>
             <div class="our-story-summary">
                 <h2>Join us as we embark on a journey of love, joy, and eternal happiness.</h2>
                 <p>From a chance meeting to a lifetime together, discover the chapters that brought us here. Our journey is a tapestry woven with laughter, tears, and countless moments that led us to this beautiful celebration of love.</p>
-                <button>Read Our Story</button>
+                
+                <button><a href="our-story.html">Read Our Story</a></button>
             </div>
-            <div class="our-story2" >
+            <!-- <div class="our-story2" >
                 <img src="/assets/our-story-2.jpg" alt="">
-            </div>
+            </div> -->
         </section>
 
         <section class="confirm-section">
@@ -53,7 +74,7 @@
                 <h4>Tuscany</h4> <!-- font family : la-bohemienne -->
                 <p>Step into the timeless beauty of Tuscany with our Giona wedding template. Set against the backdrop of rolling hills and lush vineyards, your celebration unfolds in the heart of a 17th-century villa, nestled amidst the enchanting landscape of Tuscany. </p>
                 <p>Surrounded by fragrant peach trees and bathed in the warm glow of the Italian sun, this picturesque setting exudes romance and charm at every turn. From intimate courtyard ceremonies to al fresco receptions under the stars, your love story comes to life in this idyllic Tuscan retreat. Let the rustic elegance and natural beauty of the villa set the stage for an unforgettable wedding day, where every moment is imbued with the magic of Italy.</p>
-                <button>Confirm Your Presence</button>
+                <button><a href="rsvp.html">Confirm Your Presence</a></button>
             </div>
             <img src="/assets/confirm-1.jpg" alt="">
         </section>
@@ -79,7 +100,7 @@
                     <p>Revel in a sumptuous feast under the stars, followed by an evening of dancing and merriment.</p>
                 </div>
             </div>
-            <button>RSVP</button>
+            <button><a href="rsvp.html">RSVP</a></button>
         </section>
 
 
@@ -91,23 +112,23 @@
                 </h2>
                 <div>
                     <h3>Registry</h3>
-                    <p>Your presence is the greatest gift of all. However, for those who wish to honor us with a token of love, you can find our registry <a href="">here</a>.</p>
+                    <p>Your presence is the greatest gift of all. However, for those who wish to honor us with a token of love, you can find our registry <a href="registry.html">here</a>.</p>
                 </div>
 
                 <div>
                     <h3>Travel & Stay</h3>
-                    <p>Navigate the journey to Tuscany with ease. Find travel tips, accommodation suggestions, and local recommendations <a href="">here</a>.</p>
+                    <p>Navigate the journey to Tuscany with ease. Find travel tips, accommodation suggestions, and local recommendations <a href="travel-stay.html">here</a>.</p>
                 </div>
 
                 <div>
                     <h3>FAQs</h3>
-                    <p>Got questions? We've got answers! Check out our frequently asked questions here, or feel free to reach out to us directly.</p>
+                    <p>Got questions? We've got answers! Check out our frequently asked questions <a href="faqs.html">here</a>, or feel free to reach out to us directly.</p>
                 </div>
            </div>
         </section>
 
         <section class="countdown-section">
-            <div>
+            <div class="countdown-section-title">
                 <h2>Let The Countdown Begin</h2>
             </div>
             <div>
@@ -117,5 +138,6 @@
         </section>
     </main>
     <footer>Footer</footer>
+    <script src="app.js"></script>
 </body>
 </html>
